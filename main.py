@@ -10,6 +10,11 @@ from flask import Flask
 from threading import Thread
 import asyncio
 
+print("\n[DEBUG] Variáveis de ambiente disponíveis no container Railway:")
+for key, value in os.environ.items():
+    print(f"{key} = {value}")
+print("\n--- Fim das variáveis ---\n")
+
 # ---------------------- LOGGING PROFISSIONAL ----------------------
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(message)s')
 
