@@ -1,6 +1,8 @@
 import os
 import logging
 import discord
+from dotenv import load_dotenv
+load_dotenv()
 from discord.ext import commands
 import google.generativeai as genai
 from gtts import gTTS
