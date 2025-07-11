@@ -14,6 +14,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(message)s')
 # ---------------------- CONFIGURAÇÕES ----------------------
 DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+print(f"[DEBUG] Variável GEMINI_API_KEY: {GEMINI_API_KEY}")
 
 if not GEMINI_API_KEY:
     logging.error("Erro: GEMINI_API_KEY não configurada. O bot não funcionará.")
